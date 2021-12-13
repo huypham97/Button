@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fixing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_phone"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <CheckBox
+            android:id="@+id/checkbox_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Gender"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_demo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="@string/toggle_off_demo"
+            android:layout_below="@id/edittext_phone"
+            android:layout_toRightOf="@+id/checkbox_gender"
+            android:textOn="@string/toggle_on_demo" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_email"
+        android:hint="@string/edittext_phone_hint"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_email_hint"
+        android:inputType="none"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/switch_demo"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:background="@drawable/size_shape"
+            android:text="@string/radio1" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/size_shape"
+            android:text="@string/radio2" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/size_shape"
+            android:text="@string/radio3" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fixing"
+        android:layout_alignParentLeft="true"
+        android:checked="false"
+        android:text="@string/switch_demo" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text1"
+        android:textSize="25sp"
+        android:layout_below="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv1"
+        android:layout_marginLeft="61dp"
+        android:layout_toRightOf="@id/tv1"
+        android:text="Text2"
+        android:textSize="17sp" />
+
+</RelativeLayout>

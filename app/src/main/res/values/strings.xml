@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Button</string>
+    <string name="button">Button Sample</string>
+    <string name="edittext_phone_hint">Phone number, Ex: +849xxxxxxxx</string>
+    <string name="edittext_email_hint">Email</string>
+    <string name="toggle_on_demo">Toggle On</string>
+    <string name="toggle_off_demo">Toggle Off</string>
+    <string name="switch_demo">Switch Demo</string>
+    <string name="radio1">Radio 1</string>
+    <string name="radio2">Radio 2</string>
+    <string name="radio3">Radio 3</string>
+</resources>
